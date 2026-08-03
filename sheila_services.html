@@ -339,6 +339,7 @@ body{font-family:'Inter',sans-serif;color:var(--text);background:var(--white);ov
     <div class="toggle-group" id="currency-toggle">
       <button class="toggle-btn active" onclick="setCurrency('eur')" id="btn-eur">€ EUR</button>
       <button class="toggle-btn" onclick="setCurrency('usd')" id="btn-usd">$ USD</button>
+      <button class="toggle-btn" onclick="setCurrency('gbp')" id="btn-gbp">£ GBP</button>
     </div>
     <div class="toggle-group" id="lang-toggle">
       <button class="toggle-btn active" onclick="setLang('en')" id="btn-en">EN</button>
@@ -386,7 +387,7 @@ body{font-family:'Inter',sans-serif;color:var(--text);background:var(--white);ov
             data-es="Planificación de Luna de Miel <em>a Medida</em>">
           </h2>
           <div class="service-price">
-            <span class="price-amount" data-eur="€1,500" data-usd="$1,700">€1,500</span>
+            <span class="price-amount" data-eur="€1,500" data-usd="$1,700" data-gbp="£1,300">€1,500</span>
             <span class="price-note t" data-en="fixed planning fee" data-es="tarifa fija de planificación"></span>
           </div>
           <p class="service-fit t"
@@ -407,8 +408,8 @@ body{font-family:'Inter',sans-serif;color:var(--text);background:var(--white);ov
 
           <span class="service-section-title t" data-en="Scope" data-es="Alcance"></span>
           <div class="service-limits">
-            <p class="t" data-en="Up to 14 nights · One country · Longer simple trips considered · No 24/7 concierge · International flights not booked"
-               data-es="Hasta 14 noches · Un país · Viajes más largos pero simples también considerados · Sin concierge 24/7 · No se reservan vuelos internacionales"></p>
+            <p class="t" data-en="Up to 14 nights · One country · No 24/7 support · International flights not booked · Also applicable to lower-complexity itineraries such as all-inclusive stays, multi-night cruises, or partial trip planning alongside another agency."
+               data-es="Hasta 14 noches · Un país · Sin soporte 24/7 · No se reservan vuelos internacionales · También aplicable a itinerarios de menor complejidad como estancias all inclusive, cruceros de varias noches, o la planificación de una parte del viaje junto a otra agencia."></p>
           </div>
 
           <span class="service-section-title" style="margin-top:20px;" class="t"><span class="t" data-en="Deliverables" data-es="Entregables"></span></span>
@@ -432,7 +433,7 @@ body{font-family:'Inter',sans-serif;color:var(--text);background:var(--white);ov
             data-es="Luna de Miel Extendida <em>o Multi-Destino</em>">
           </h2>
           <div class="service-price">
-            <span class="price-amount" data-eur="€2,500" data-usd="$2,850">€2,500</span>
+            <span class="price-amount" data-eur="€2,500" data-usd="$2,850" data-gbp="£2,150">€2,500</span>
             <span class="price-note t" data-en="fixed planning fee" data-es="tarifa fija de planificación"></span>
           </div>
           <p class="service-fit t"
@@ -440,7 +441,7 @@ body{font-family:'Inter',sans-serif;color:var(--text);background:var(--white);ov
             data-es="Ideal para lunas de miel más largas o logísticamente complejas, con varios países, muchos movimientos internos, experiencias especializadas o gran coordinación.">
           </p>
 
-          <span class="service-section-title t" data-en="Everything in Bespoke, plus" data-es="Todo lo del servicio anterior, más"></span>
+          <span class="service-section-title t" data-en="Everything in Bespoke, plus" data-es="Todo lo incluido en la Bespoke Honeymoon, más"></span>
           <ul class="service-list">
             <li class="t" data-en="Complex multi-country route design and coordination" data-es="Diseño y coordinación de ruta multi-país compleja"></li>
             <li class="t" data-en="Up to 2 countries and 25 nights" data-es="Hasta 2 países y 25 noches"></li>
@@ -452,8 +453,8 @@ body{font-family:'Inter',sans-serif;color:var(--text);background:var(--white);ov
           <span class="service-section-title t" data-en="Scope" data-es="Alcance"></span>
           <div class="service-limits">
             <p class="t"
-              data-en="Up to 2 countries · Up to 25 nights · No 24/7 concierge · International flights not booked"
-              data-es="Hasta 2 países · Hasta 25 noches · Sin concierge 24/7 · No se reservan vuelos internacionales">
+              data-en="Up to 2 countries · Up to 25 nights · No 24/7 support · International flights not booked"
+              data-es="Hasta 2 países · Hasta 25 noches · Sin soporte 24/7 · No se reservan vuelos internacionales">
             </p>
           </div>
 
@@ -580,8 +581,8 @@ body{font-family:'Inter',sans-serif;color:var(--text);background:var(--white);ov
             <span class="step-label t" data-en="Step 1" data-es="Paso 1"></span>
             <h3 class="step-title t" data-en="You introduce the couple" data-es="Presentas a la pareja"></h3>
             <p class="step-desc t"
-              data-en="You make a three-way email introduction between me and the couple. This doesn't automatically qualify as a referral — that happens after my discovery call."
-              data-es="Haces una presentación por email entre la pareja y yo. Esto no cuenta automáticamente como referido — eso ocurre después de mi llamada de descubrimiento.">
+              data-en="You make a three-way email introduction between me and the couple, with the couple's consent to share their contact details. The introduction is registered as a referral from the date it is received."
+              data-es="Haces una presentación por email entre la pareja y yo, con el consentimiento de la pareja para compartir sus datos de contacto. La presentación queda registrada como referido desde la fecha en que la recibo.">
             </p>
             <div class="step-detail">
               <div class="step-detail-title t" data-en="Include in the introduction" data-es="Incluye en la presentación"></div>
@@ -600,10 +601,10 @@ body{font-family:'Inter',sans-serif;color:var(--text);background:var(--white);ov
           <div class="step-indicator"><div class="step-number">2</div></div>
           <div class="step-body">
             <span class="step-label t" data-en="Step 2" data-es="Paso 2"></span>
-            <h3 class="step-title t" data-en="I qualify the couple" data-es="Calificaré a la pareja"></h3>
+            <h3 class="step-title t" data-en="I assess the request" data-es="Evalúo la solicitud"></h3>
             <p class="step-desc t"
-              data-en="I hold a discovery call directly with the couple to assess their needs, destinations, budget, travel style and complexity. Once I determine which service fits, I confirm the referral to you in writing with a unique Referral ID."
-              data-es="Hago una llamada de descubrimiento directamente con la pareja para conocer sus necesidades, destinos, presupuesto, estilo de viaje y complejidad. Una vez que determino qué servicio encaja, te confirmo el referido por escrito con un ID de referido único.">
+              data-en="I hold a discovery call directly with the couple to assess their needs, destinations, budget, travel style and complexity. I then determine whether I can accept the request and which service or custom quotation is the best fit."
+              data-es="Hago una llamada de descubrimiento directamente con la pareja para conocer sus necesidades, destinos, presupuesto, estilo de viaje y complejidad. Después determino si puedo aceptar la solicitud y qué servicio o presupuesto personalizado encaja mejor.">
             </p>
             <div class="step-detail">
               <div class="step-detail-title t" data-en="I assess" data-es="Evalúo"></div>
@@ -614,8 +615,8 @@ body{font-family:'Inter',sans-serif;color:var(--text);background:var(--white);ov
               </ul>
             </div>
             <div style="margin-top:12px;display:flex;flex-wrap:wrap;gap:8px;">
-              <span class="step-highlight highlight-gold">🆔 <span class="t" data-en="Unique Referral ID assigned" data-es="ID de referido único asignado"></span></span>
-              <span class="step-highlight highlight-navy">✉️ <span class="t" data-en="Written confirmation to you" data-es="Confirmación escrita para ti"></span></span>
+              <span class="step-highlight highlight-gold">🆔 <span class="t" data-en="Referral ID recorded" data-es="ID de referido registrado"></span></span>
+              <span class="step-highlight highlight-navy">✉️ <span class="t" data-en="Service fit confirmed" data-es="Servicio adecuado confirmado"></span></span>
             </div>
           </div>
         </div>
@@ -627,8 +628,8 @@ body{font-family:'Inter',sans-serif;color:var(--text);background:var(--white);ov
             <span class="step-label t" data-en="Step 3" data-es="Paso 3"></span>
             <h3 class="step-title t" data-en="Proposal, terms & payment" data-es="Propuesta, condiciones y pago"></h3>
             <p class="step-desc t"
-              data-en="I send the couple a proposal and client terms directly. They accept and pay the planning fee through Fora. The project only starts after successful payment. Once confirmed, I let you know the referral has converted."
-              data-es="Le envío a la pareja la propuesta y las condiciones directamente. Aceptan y pagan la tarifa de planificación a través de Fora. El proyecto solo empieza después de que el pago se haya procesado con éxito. Una vez confirmado, te aviso de que el referido ha convertido.">
+              data-en="I send the couple a proposal and client terms directly. They accept and pay the planning fee through Fora. The project only starts after the payment has been successfully processed. Once confirmed, I let you know that the client has booked the service."
+              data-es="Le envío a la pareja la propuesta y las condiciones directamente. Aceptan y pagan la tarifa de planificación a través de Fora. El proyecto solo empieza después de que el pago se haya procesado correctamente. Una vez confirmado, te aviso de que el cliente ha contratado el servicio.">
             </p>
             <span class="step-highlight highlight-green">💳 <span class="t" data-en="Payment processed through Fora" data-es="Pago procesado a través de Fora"></span></span>
           </div>
@@ -655,10 +656,10 @@ body{font-family:'Inter',sans-serif;color:var(--text);background:var(--white);ov
             <span class="step-label t" data-en="Step 5" data-es="Paso 5"></span>
             <h3 class="step-title t" data-en="Commission is triggered" data-es="Se activa la comisión"></h3>
             <p class="step-desc t"
-              data-en="Your commission becomes payable once I've received the corresponding payout from Fora — typically 3–5 business days after the client's payment date. This runs in parallel with the planning service, so you don't have to wait for the honeymoon to happen."
-              data-es="Tu comisión es pagadera en cuanto yo recibo el pago correspondiente de Fora — normalmente entre 3 y 5 días hábiles después de la fecha de pago del cliente. Esto ocurre en paralelo con el servicio de planificación, así que no tienes que esperar a que se celebre la luna de miel.">
+              data-en="The referral becomes a Converted Referral and your commission becomes payable once the planning fee is cleared and non-refundable and I have received the corresponding payout from Fora. This runs in parallel with the planning service, so you do not have to wait for the honeymoon to take place."
+              data-es="El referido se convierte en un Referido Convertido y tu comisión pasa a ser pagadera cuando la tarifa de planificación está liquidada y es no reembolsable, y yo he recibido el payout correspondiente de Fora. Esto ocurre en paralelo con el servicio de planificación, por lo que no tienes que esperar a que se celebre la luna de miel.">
             </p>
-            <span class="step-highlight highlight-gold">⚡ <span class="t" data-en="3–5 business days after client payment" data-es="3–5 días hábiles tras el pago del cliente"></span></span>
+            <span class="step-highlight highlight-gold">⚡ <span class="t" data-en="Triggered after cleared payment and Fora payout" data-es="Se activa tras la liquidación del pago y el payout de Fora"></span></span>
           </div>
         </div>
 
@@ -768,6 +769,7 @@ function applyCurrency(cur) {
   });
   document.getElementById('btn-eur').classList.toggle('active', cur === 'eur');
   document.getElementById('btn-usd').classList.toggle('active', cur === 'usd');
+  document.getElementById('btn-gbp').classList.toggle('active', cur === 'gbp');
 }
 function setCurrency(cur) { applyCurrency(cur); }
 
